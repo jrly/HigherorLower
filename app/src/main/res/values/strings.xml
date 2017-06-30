@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Higher or Lower</string>
+    <string name="enter_a_number">Enter a Number</string>
+    <string name="go">GO</string>
+    <string name="choose_a_number_between_1_20">Choose a number between 1-20!</string>
+    <string name="this_is_a_guessing_game_nchoose_a_number_between_1_20">This is a guessing game! Choose a Number between 1-20</string>
+</resources>

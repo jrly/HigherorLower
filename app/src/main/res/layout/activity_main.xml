@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jimmy.higherorlower.MainActivity">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_above="@+id/input"
+        android:layout_alignEnd="@+id/input"
+        android:layout_alignLeft="@+id/input"
+        android:layout_alignRight="@+id/input"
+        android:layout_alignStart="@+id/input"
+        android:layout_marginBottom="26dp"
+        android:text="@string/this_is_a_guessing_game_nchoose_a_number_between_1_20"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@+id/text"
+        tools:layout_editor_absoluteX="83dp"
+        tools:layout_editor_absoluteY="306dp"
+        tools:ignore="MissingConstraints"
+        android:layout_above="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="23dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="clickFunction"
+        android:text="@string/go"
+        app:layout_constraintTop_toBottomOf="@+id/input"
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="332dp"
+        tools:ignore="MissingConstraints"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="175dp" />
+
+</android.widget.RelativeLayout>
